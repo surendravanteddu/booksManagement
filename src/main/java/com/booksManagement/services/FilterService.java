@@ -51,7 +51,7 @@ public class FilterService implements ContainerResponseFilter, ContainerRequestF
 	public void filter(ContainerRequestContext request) throws IOException {
 
 		String path = request.getUriInfo().getPath();
-		List<String> openPaths = Arrays.asList();// Include all the paths that
+		List<String> openPaths = Arrays.asList("myresource");// Include all the paths that
 													// does not need
 													// authentication here with
 													// comma separation.
