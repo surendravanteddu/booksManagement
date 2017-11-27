@@ -23,7 +23,7 @@ import com.booksManagement.util.ErrorMessages;
 import com.booksManagement.util.UserBooksUtil;
 import com.booksManagement.util.UserUtil;
 
-@Path("/user")
+@Path("/")
 public class UserService extends FilterService {
 
 	JWTTokenService jwt = new JWTTokenService();
