@@ -2,7 +2,6 @@ package com.booksManagement.services;
 
 import java.sql.SQLException;
 
-import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -60,7 +59,7 @@ public class UserService extends FilterService {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response loginUser(UserEntity user, @Context HttpServletResponse response) {
+	public Response loginUser(UserEntity user) {
 		int status = 400;
         ResponseToken token = new ResponseToken();
 		try {
